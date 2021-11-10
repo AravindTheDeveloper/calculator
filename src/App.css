@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    border: 5px solid rgb(11, 148, 63);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.keypad{
+    display: grid;
+    /* align-items: center; */
+    text-align: center;
+    grid-auto-rows: minmax(50px, 55px );
+    /* grid-template-columns: auto auto auto auto; */
+}
+
+input[type="text"] {
+    height: 80px;
+    width: 240px;
+    border: 5px; 
+    text-align: right;
+    background: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.item1{
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 18px;
+    background: rgb(30, 110, 9);
+    color: linen;
+    
+}
+
+.item-n{
+    display: grid;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 5; 
+    font-size: 25px;
+    background: rgb(30, 110, 9);
+    color: linen;
+    
+}
+
+button{
+    margin: 1px;
+    font-weight: 50px;
+    border-radius: 8px;
+    border-color: white;
+    color: green;
+    background: rgb(203, 248, 198);
+
+    
+}
